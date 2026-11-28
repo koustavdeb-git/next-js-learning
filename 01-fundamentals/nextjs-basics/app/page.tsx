@@ -1,11 +1,15 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
+
 import Counter from "@/components/Counter";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Next Fundamentals",
+  description: "Learn the basics of Next JS"
+}
 
 export default function Home() {
   return (
     <div>
-      <Navbar name={"Koustav"} />
       <Counter />
     </div>
   );
